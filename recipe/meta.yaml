@@ -1,6 +1,5 @@
 {% set name = "asyncer" %}
-{% set version = "0.0.1" %}
-
+{% set version = "0.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,21 +7,21 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/asyncer-{{ version }}.tar.gz
-  sha256: a3f70685f20cd91e24a677981cacdbdd6d6b81f2404b7bfe957e9550fee264a1
+  sha256: d546c85f3626ebbaf06bb4395db49761c902a61a6ac802b1a74133cab4f7f433
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
+    - python >=3.6,<4.0
     - pip
     - poetry-core
-    - python >=3.6,<4.0
   run:
-    - anyio >=3.4.0,<4.0.0
     - python >=3.6,<4.0
+    - anyio >=3.4.0,<4.0.0
 
 test:
   imports:
