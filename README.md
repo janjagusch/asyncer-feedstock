@@ -146,6 +146,3 @@ Feedstock Maintainers
 * [@janjagusch](https://github.com/janjagusch/)
 * [@maresb](https://github.com/maresb/)
 
-
-<!-- dummy commit to enable rerendering -->
-
