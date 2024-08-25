@@ -1,5 +1,5 @@
 {% set name = "asyncer" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/asyncer-{{ version }}.tar.gz
-  sha256: d5e563fb0f56eb87b97257984703658a4f5bbdb52ff851b3e8ed864cc200b1d2
+  sha256: a589d980f57e20efb07ed91d0dbe67f1d2fd343e7142c66d3a099f05c620739c
 
 build:
   noarch: python
